@@ -46,7 +46,15 @@ public class SoundManagerMixin {
         long time = Minecraft.getSystemTime();
         if (time > lastMusicRandomPitch) {
             this.sndSystem.setPitch("BgMusic", rollPitch());
-            lastMusicRandomPitch = time + 10000;
+            lastMusicRandomPitch = time + 5000;
+            return;
+        }
+
+        float pitch = this.sndSystem.getPitch("BgMusic");
+        if (pitch < 1F) {
+            this.sndSystem.setPitch("BgMusic", pitch + 0.0015F);
+        } else {
+            this.sndSystem.setPitch("BgMusic", pitch - 0.0015F);
         }
 
         this.ticksBeforeMusic = 0;
