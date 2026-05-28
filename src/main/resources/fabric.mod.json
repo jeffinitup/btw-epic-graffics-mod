@@ -3,25 +3,17 @@
   "id": "${mod_id}",
   "version": "${version}+BTW-${btw_version}",
   "name": "${name}",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Client enhancement addon for Better Than Wolves",
   "authors": [
-    "Me!"
+    "jeffyjamzhd"
   ],
   "contact": {
     "homepage": "https://legacyfabric.net/",
     "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
   },
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ],
-    "btw:addon": [
-      "btw.community.example.ExampleAddon"
-    ]
-  },
+  "icon": "assets/${mod_id}/icon.png",
+  "environment": "client",
   "custom": {
     "btw:addon_prefix": "EX"
   },

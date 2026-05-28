@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.jeffyjamzhd.btwegshdma.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "FontRendererMixin",
+    "PositionTextureVertexMixin",
+    "SoundManagerMixin",
+    "TessellatorMixin",
+    "TextureUtilMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
